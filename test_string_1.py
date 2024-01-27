@@ -1,0 +1,1 @@
+print('This is a new string for testing commit in GitHub.')
