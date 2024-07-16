@@ -1,5 +1,3 @@
-
-
 #Create an empty list for the Grocery List
 GrocList = []
 
@@ -30,7 +28,9 @@ while True:
 unique_items = sorted(set(GrocList))
 
 for item in unique_items:
-    print(f"{item_count[item]} {item}")    
+    print(f"{item_count[item]} {item}")   
+
+ 
 
 
 
