@@ -9,33 +9,26 @@ def main():
 def is_valid(s):
     length = int(len(s))
     leading = s[0:2]
+    num_found = False
+
+    if length < 2 or length > 6:
+        return False
+    elif not leading.isalpha():
+        return False
 
     for i in s:
         if not i.isalnum():
             return False
+        
+        if i.isdigit():
+            if i == '0' and not num_found:
+                return False
+            num_found = True
 
-    for i, char in enumerate(s):
-        if char.isdigit():
-            first_digit_index = i
-            for char in s[first_digit_index:]:
-                if not char.isdigit():
-                    return False
-        else:
-             break
-    if s[first_digit_index] == '0':
-        return False
-    
-    
+        elif num_found:
+            return False
 
-    if length > 6:
-        return False
-    if length < 2:
-        return False
-    if not leading.isalpha():
-        return False
+    return True
 
-
-    else:
-        return True
 
 main()
