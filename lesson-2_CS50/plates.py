@@ -15,7 +15,6 @@ def is_valid(s):
         return False
     elif not leading.isalpha():
         return False
-    
 
     for i in s:
         if not i.isalnum():
@@ -31,6 +30,5 @@ def is_valid(s):
 
     return True
 
-    
 
 main()

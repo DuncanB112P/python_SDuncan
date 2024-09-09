@@ -24,7 +24,7 @@ for student in students:
 
 # LIST OF DICTIONARIES
 
-students = [
+'''students = [
     {'name': 'Hermione', 'house': 'Griffyndor', 'patronus': 'Otter'},
     {'name': 'Harry', 'house': 'Griffyndor', 'patronus': 'Stag'},
     {'name': 'Ron', 'house': 'Griffyndor', 'patronus': 'Dog'},
@@ -32,4 +32,16 @@ students = [
 ]
 
 for student in students:
-    print(student['name'], student['house'], student['patronus'], sep=', ')
+    print(student['name'], student['house'], student['patronus'], sep=', ')'''
+
+
+household = [
+    {'name': 'Sam', 'age': '47'},
+    {'name': 'Stepanie', 'age': '41'},
+    {'name': 'Preston', 'age': '16'},
+    {'name': 'Mackenzie', 'age': '13'}
+]
+
+for person in household:
+    print(person['name'], person['age'])
+    
