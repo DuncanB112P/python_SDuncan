@@ -1,3 +1,4 @@
+#import external packages after installing those packages with the "pip install" command
 import cowsay
 import sys
 
