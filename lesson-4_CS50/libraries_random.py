@@ -30,7 +30,7 @@ print(number)
 
 import random
 
-cards = ['J', 'Q', 'K', 'A', '10']
+cards = ['Jack', 'Queen', 'King', 'Ace', 'Ten']
 random.shuffle(cards)
 for card in cards:
     print(card)
